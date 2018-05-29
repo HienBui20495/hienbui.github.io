@@ -1,494 +1,1343 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>Maia</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="styles/main_style.css">
-	<link rel="stylesheet" href="styles/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="asset/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="asset/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="asset/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="asset/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="asset/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="asset/slick/slick.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
 </head>
-<body>
-<!--Header-->
-		<div class="header">
-				<!--User Navigation-->
-						<nav class="navbar navbar-expand-sm bg-transparent justify-content-end">
-										<ul class="navbar-nav d-flex justify-content-end">
-												<li class="p-1 nav-item">
-														<a class="nav-link quickSearch" href="#" data-search="quickSearch" aria-controls="quickSearch" aria-expanded="false">Search</a>
-												</li>
-												<li class="p-1 nav-item">
-													<a class="nav-link" href="#">Gift Certificates</a>
-												</li>
-												<li class="p-1 nav-item">
-													<span class="nav-link">
-													<a class="navUser-action" href="#">Sign in</a> or
-													<a class="navUser-action" href="#">Register</a>
-													</span>
-												</li>
-												<li class="p-1 nav-item">
-													<a class="nav-link" href="#">Cart</a>
-												</li>
-											</ul>
-				
-						</nav>	
+<!--originally authored by Nick Pettit - https://github.com/nickpettit/glide -->
+<!--originally authored by Le Xuan Bach - Colorlib -->
+<body class="animsition">
 
-				<!--Logo-->
-			
-						<a href="#">
-								<div class="header-logo-image-container">
-								<h1>TECH SHOP</h1>
-								</div>
-						</a>
-	
-				<!--NavPages-->
-				<div class="container d-flex justify-content-between">
-					<div class="topnav d-flex flex-wrap" id="myTopnav">
-						<a class="nav-item nav-link" href="#"zz><h4>Categolories</h4></a>
-						<a class="nav-item nav-link" href="#"><h4>Hot New Arrivals</h4></a>
-						<a class="nav-item nav-link" href="#"><h4>Super Deals</h4></a>
-						<a class="nav-item nav-link" href="#"><h4>Feature Brands</h4></a>
-						<a class="nav-item nav-link" href="#"><h4>Pages</h4></a>
-						<a class="nav-item nav-link" href="#"><h4>Blog</h4></a>
-						<a class="nav-item nav-link" href="#"><h4>Contact Us</h4></a>
-						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-							<i class="fa fa-bars"></i>
-						</a>
-					</nav>
+	<!-- Header -->
+	<header class="header1">
+		<!-- Header desktop -->
+		<div class="container-menu-header">
+			<div class="topbar">
+				<div class="topbar-social">
+					<a href="#" class="topbar-social-item fa fa-facebook"></a>
+					<a href="#" class="topbar-social-item fa fa-instagram"></a>
+					<a href="#" class="topbar-social-item fa fa-pinterest-p"></a>
+					<a href="#" class="topbar-social-item fa fa-snapchat-ghost"></a>
+					<a href="#" class="topbar-social-item fa fa-youtube-play"></a>
 				</div>
-		</div>
-<!--Carousel-->
-						<div class="container">
-								
-								<div id="demo" class="carousel slide" data-ride="carousel">
 
-										<!-- Indicators -->
-										<ul class="carousel-indicators">
-											<li data-target="#demo" data-slide-to="0" class="active"></li>
-											<li data-target="#demo" data-slide-to="1"></li>
-											<li data-target="#demo" data-slide-to="2"></li>
-										</ul>
-									
-										<!-- The slideshow -->
-										<div class="carousel-inner" style="height:400px">
-											<div class="carousel-item active">
-												<img src="images/shop_background.jpg" alt="first slice">
-											</div>
-											<div class="carousel-item">
-												<img src="images/pic02.png" alt="second slice">
-											</div>
-											<div class="carousel-item">
-												<img src="images/pic03.png" alt="third slice">
-											</div>
-										</div>
-									
-										<!-- Left and right controls -->
-										<a class="carousel-control-prev" href="#demo" data-slide="prev">
-											<span class="carousel-control-prev-icon"></span>
-										</a>
-										<a class="carousel-control-next" href="#demo" data-slide="next">
-											<span class="carousel-control-next-icon"></span>
-										</a>
-									
-									</div>
-								<!--*****-->
+				<span class="topbar-child1">
+					Free shipping for standard order over $200
+				</span>
+
+				<div class="topbar-child2">
+
+					<form>
+						<input class="topbar-search fl" type="text" name="search" placeholder="Search.." rel="search">
+					</form>
+					<span class="linedivide1"></span>
+
+					<span class="topbar-email">
+						www.maianuts.com
+					</span>
+
+					<span class="linedivide1"></span>
+
+					<div class="topbar-language rs1-select2">
+						<select class="selection-1" name="time">
+							<option>ENG</option>
+							<option>日本語</option>
+						</select>
 					</div>
-<!--Product TECH SHOP-->
-					<!--Deals of the week-->
-					<div class="container" id="myTab">
-						
-									<div class="products-item"><h2>Deals of the week</h2></div>
+				</div>
+			</div>
 
-					<ul class="nav nav-tabs" role="tablist">
-							<li class="nav-item float-right">
-								<a class="nav-link active" id="deals-tab" data-toggle="tab" href="#deals" role="tab" aria-controls="deals" aria-selected="false">Deals</a>
+			<div class="wrap_header">
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					<img src="images/icons/logo.png" alt="IMG-LOGO">
+				</a>
+						<ul class="main_menu">
+							<li>
+								<a href="product.html">About</a>
 							</li>
-							<li class="nav-item float-right">
-								<a class="nav-link" id="feature-tab" data-toggle="tab" href="#feature" role="tab" aria-controls="feature" aria-selected="false">Featured</a>
+
+							<li class="sale-noti dropdown">
+								<div class="dropbtn">Shop</div>
+								<div class="dropdown-content">
+									<a href="#">iPad, Tablets</a>
+									<a href="#">Laptops</a>
+									<a href="#">Desktops</a>
+									<a href="#">Network & Storage</a>
+									<a href="#">Accessories</a>
+									<a href="#">Software </a>
+								</div>
+							</li>
+
+							<li>
+								<a href="cart.html">News</a>
+							</li>
+
+							<li>
+								<a href="blog.html">Contact</a>
+							</li>
+
+							<li>
+								<a href="about.html">Product</a>
+							</li>
+
+							<li>
+								<a href="contact.html">Sale</a>
 							</li>
 						</ul>
-				<!--Deals-->
-						<div class="tab-content" id="myTabContent">
-							<div class="tab-pane fade show active" id="deals" role="tabpanel" aria-labelledby="deals-tab">
-								<div class="product-contents">
-								<!---->
-									<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-												<!---->
-																<div class="card-tab d-flex flex-row">
-																		<div class="card" style="width: 16rem;">
-																				<img class="card-img-top" src="images/trends_1.jpg" alt="Card image cap">
-																				<div class="card-body">
-																					<h5 class="card-title">MacBook Air 13</h5>
-																					<span class="fa fa-star checked"></span>
-																					<span class="fa fa-star checked"></span>
-																					<span class="fa fa-star checked"></span>
-																					<span class="fa fa-star"></span>
-																					<span class="fa fa-star"></span>
-																					<p class="card-text"><h3>$2000</h3></p>
-																					<a href="#" class="btn btn-primary">Add to cart</a>
-																				</div>
-																		</div>
-																		<div class="card" style="width: 16rem;">
-																				<img class="card-img-top" src="images/trends_3.jpg" alt="Card image cap">
-																				<div class="card-body">
-																					<h5 class="card-title">MacBook Air 13</h5>
-																					<span class="fa fa-star checked"></span>
-																					<span class="fa fa-star checked"></span>
-																					<span class="fa fa-star checked"></span>
-																					<span class="fa fa-star"></span>
-																					<span class="fa fa-star"></span>
-																					<p class="card-text"><h3>$2000</h3></p>
-																					<a href="#" class="btn btn-primary">Add to cart</a>
-																				</div>
-																		</div>
-																		<div class="card" style="width: 16rem;">
-																				<img class="card-img-top" src="images/banner_2_product.png" alt="Card image cap">
-																				<div class="card-body">
-																					<h5 class="card-title">MacBook Air 13</h5>
-																					<span class="fa fa-star checked"></span>
-																					<span class="fa fa-star checked"></span>
-																					<span class="fa fa-star checked"></span>
-																					<span class="fa fa-star"></span>
-																					<span class="fa fa-star"></span>
-																					<p class="card-text"><h3>$2000</h3></p>
-																					<a href="#" class="btn btn-primary">Add to cart</a>
-																				</div>
-																		</div>
-																		<div class="card" style="width: 16rem;">
-																				<img class="card-img-top" src="images/blog_4.jpg " alt="Card image cap">
-																				<div class="card-body">
-																					<h5 class="card-title">MacBook Air 13</h5>
-																					<span class="fa fa-star checked"></span>
-																					<span class="fa fa-star checked"></span>
-																					<span class="fa fa-star checked"></span>
-																					<span class="fa fa-star"></span>
-																					<span class="fa fa-star"></span>
-																					<p class="card-text"><h3>$2000</h3></p>
-																					<a href="#" class="btn btn-primary">Add to cart</a>
-																				</div>
-																		</div>
-																</div>
-												<!---->
-												</div>
-												<div class="carousel-item">
-																								<!---->
-																								<div class="card-tab d-flex flex-row">
-																										<div class="card" style="width: 16rem;">
-																												<img class="card-img-top" src="images/new_single.png" alt="Card image cap">
-																												<div class="card-body">
-																													<h5 class="card-title">MacBook Air 13</h5>
-																													<span class="fa fa-star checked"></span>
-																													<span class="fa fa-star checked"></span>
-																													<span class="fa fa-star checked"></span>
-																													<span class="fa fa-star"></span>
-																													<span class="fa fa-star"></span>
-																													<p class="card-text"><h3>$2000</h3></p>
-																													<a href="#" class="btn btn-primary">Add to cart</a>
-																												</div>
-																										</div>
-																										<div class="card" style="width: 16rem;">
-																												<img class="card-img-top" src="images/featured_5.png" alt="Card image cap">
-																												<div class="card-body">
-																													<h5 class="card-title">MacBook Air 13</h5>
-																													<span class="fa fa-star checked"></span>
-																													<span class="fa fa-star checked"></span>
-																													<span class="fa fa-star checked"></span>
-																													<span class="fa fa-star"></span>
-																													<span class="fa fa-star"></span>
-																													<p class="card-text"><h3>$2000</h3></p>
-																													<a href="#" class="btn btn-primary">Add to cart</a>
-																												</div>
-																										</div>
-																										<div class="card" style="width: 16rem;">
-																												<img class="card-img-top" src="images/featured_8.png" alt="Card image cap">
-																												<div class="card-body">
-																													<h5 class="card-title">MacBook Air 13</h5>
-																													<span class="fa fa-star checked"></span>
-																													<span class="fa fa-star checked"></span>
-																													<span class="fa fa-star checked"></span>
-																													<span class="fa fa-star"></span>
-																													<span class="fa fa-star"></span>
-																													<p class="card-text"><h3>$2000</h3></p>
-																													<a href="#" class="btn btn-primary">Add to cart</a>
-																												</div>
-																										</div>
-																										<div class="card" style="width: 16rem;">
-																												<img class="card-img-top" src="images/featured_6.png" alt="Card image cap">
-																												<div class="card-body">
-																													<h5 class="card-title">MacBook Air 13</h5>
-																													<span class="fa fa-star checked"></span>
-																													<span class="fa fa-star checked"></span>
-																													<span class="fa fa-star checked"></span>
-																													<span class="fa fa-star"></span>
-																													<span class="fa fa-star"></span>
-																													<p class="card-text"><h3>$2000</h3></p>
-																													<a href="#" class="btn btn-primary">Add to cart</a>
-																												</div>
-																										</div>
-																								</div>
-																							<!---->
+					</nav>
+				</div>
 
-											
-												</div>
-											</div>
-									<!---->
-											<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-												<span class="sr-only">Previous</span>
-											</a>
-											<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-												<span class="carousel-control-next-icon" aria-hidden="true"></span>
-												<span class="sr-only">Next</span>
-											</a>
-										</div>
+				<!-- Header Icon -->
+				<div class="header-icons">
+					<a href="#" class="header-wrapicon1 dis-block">
+						<img src="images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
+					</a>
+
+					<span class="linedivide1"></span>
+
+					<div class="header-wrapicon2">
+						<img src="images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
+						<span class="header-icons-noti">0</span>
+
+						<!-- Header cart noti -->
+						<div class="header-cart header-dropdown">
+							<ul class="header-cart-wrapitem">
+								<li class="header-cart-item">
+									<div class="header-cart-item-img">
+										<img src="images/item-cart-01.jpg" alt="IMG">
 									</div>
-							 <!---->
-							 </div>
-					<!--feature-->		 
-							<div class="tab-pane fade" id="feature" role="tabpanel" aria-labelledby="feature-tab">
-								<div class="product-contents">
-									<div class="container">
-										<div class="row">
-											<div class="col-lg-2 order-lg-1 order-2">
-													<ul class="image_list">
-															<li class="image_list-item" data-image="images/single_4.jpg"><img src="images/single_4.jpg" alt=""></li>
-															<li class="image_list-item" data-image="images/single_2.jpg"><img src="images/single_2.jpg" alt=""></li>
-															<li class="image_list-item" data-image="images/single_3.jpg"><img src="images/single_3.jpg" alt=""></li>
-													</ul>
-											</div>
-											<div class="col-lg-5 order-lg-2 order-1">
-													<div class="image_selected"><img src="images/single_4.jpg" alt=""></div>
-											</div>
-											<div class="col-lg-5 order-3">
-													<div class="product_description">
-															<div class="product_category"><h5>Laptops</h5></div>
-															<div class="product_name"><h3>MacBook Air 13</h3></div>
-															<div class="rating_r rating_r_4 product_rating"><i></i><i></i><i></i><i></i><i></i></div>
-															<div class="product_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum. laoreet turpis, nec sollicitudin dolor cursus at. Maecenas aliquet, dolor a faucibus efficitur, nisi tellus cursus urna, eget dictum lacus turpis.</p></div>
-															<div class="order_info d-flex flex-row">
-																<form action="#">
-																	<div class="clearfix" style="z-index: 1000;">
-																		<div class="product_price">$2000</div>
-																		<div class="button_container">
-																		<button type="button" class="button cart_button">Add to Cart</button>
-																	</div>
-																	
-																</form>
-															</div>
-													</div>
-											</div>
-									
-										</div>
+
+									<div class="header-cart-item-txt">
+										<a href="#" class="header-cart-item-name">
+											Sed ut perspiciatis unde omnis iste
+										</a>
+
+										<span class="header-cart-item-info">
+											1 x $19.00
+										</span>
 									</div>
-								</div>
-							</div>
-						</div>
-			<!--./============More New Tech=============\.-->
-			<div class="wrapper">
-			<div class="container">
-				<h2 class="products-item">More New Tech</h2>
-				<div class="row newtech-item">
-					<div class="column">
-								<div class="card" style="width: 21rem;">
-									<img class="card-img-top" src="images/single_4.jpg" alt="Card image cap">
-									<div class="card-body">
-									  <h5 class="card-title">iPhone 8 (PRODUCT)RED™ Special Edition</h5>
-									  <p class="card-text">Some quick example text to build on the card.</p>
-									  <a href="#" class="btn btn-primary">Add to cart</a>
+								</li>
+
+								<li class="header-cart-item">
+									<div class="header-cart-item-img">
+										<img src="images/item-cart-02.jpg" alt="IMG">
 									</div>
-								  </div>
-					</div>
-					<div class="column">
-							<div class="card" style="width: 21rem;">
-								<img class="card-img-top" src="images/single_4.jpg" alt="Card image cap">
-								<div class="card-body">
-								  <h5 class="card-title">Sony - WH-CH700N Wireless Noise Canceling Over-the-Ear Headphon…</h5>
-								  <span class="fa fa-star checked"></span>
-								  <span class="fa fa-star checked"></span>
-								  <span class="fa fa-star checked"></span>
-								  <span class="fa fa-star"></span>
-								  <span class="fa fa-star"></span></br><br>
-								  <a href="#" class="btn btn-primary">Add to cart</a>
-								</div>
-							  </div>
-				</div>
-				<div class="column">
-						<div class="card" style="width: 21rem;">
-							<img class="card-img-top" src="images/single_4.jpg" alt="Card image cap">
-							<div class="card-body">
-							  <h5 class="card-title">Sony - 55" Class - OLED - A8F Series - 2160p - Smart - 4K UHD TV with HDR</h5>
-							  <span class="fa fa-star checked"></span>
-								  <span class="fa fa-star checked"></span>
-								  <span class="fa fa-star checked"></span>
-								  <span class="fa fa-star"></span>
-								  <span class="fa fa-star"></span></br><br>
-							  <a href="#" class="btn btn-primary">Add to cart</a>
-							</div>
-						  </div>
-				</div>
-					<div class="column">
-								<div class="card" style="width: 21rem;">
-									<img class="card-img-top" src="images/single_4.jpg" alt="Card image cap">
-									<div class="card-body">
-									  <h5 class="card-title">iPhone 8 (PRODUCT)RED™ Special Edition</h5>
-									  <p class="card-text">Some quick example text to build on the card.</p>
-									  <a href="#" class="btn btn-primary">Add to cart</a>
+
+									<div class="header-cart-item-txt">
+										<a href="#" class="header-cart-item-name">
+											Sed ut perspiciatis unde omnis iste
+										</a>
+
+										<span class="header-cart-item-info">
+											1 x $39.00
+										</span>
 									</div>
-								  </div>
-					</div>
-					<div class="column">
-							<div class="card" style="width: 21rem;">
-								<img class="card-img-top" src="images/single_4.jpg" alt="Card image cap">
-								<div class="card-body">
-								  <h5 class="card-title">Sony - WH-CH700N Wireless Noise Canceling Over-the-Ear Headphon…</h5>
-								  <span class="fa fa-star checked"></span>
-								  <span class="fa fa-star checked"></span>
-								  <span class="fa fa-star checked"></span>
-								  <span class="fa fa-star"></span>
-								  <span class="fa fa-star"></span></br><br>
-								  <a href="#" class="btn btn-primary">Add to cart</a>
+								</li>
+
+								<li class="header-cart-item">
+									<div class="header-cart-item-img">
+										<img src="images/item-cart-03.jpg" alt="IMG">
+									</div>
+
+									<div class="header-cart-item-txt">
+										<a href="#" class="header-cart-item-name">
+											Sed ut perspiciatis unde omnis iste
+										</a>
+
+										<span class="header-cart-item-info">
+											1 x $17.00
+										</span>
+									</div>
+								</li>
+							</ul>
+
+							<div class="header-cart-total">
+								Total: $75.00
+							</div>
+
+							<div class="header-cart-buttons">
+								<div class="header-cart-wrapbtn">
+									<!-- Button -->
+									<a href="cart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+										View Cart
+									</a>
 								</div>
-							  </div>
-				</div>
-				<div class="column">
-						<div class="card" style="width: 21rem;">
-							<img class="card-img-top" src="images/single_4.jpg" alt="Card image cap">
-							<div class="card-body">
-							  <h5 class="card-title">Sony - 55" Class - OLED - A8F Series - 2160p - Smart - 4K UHD TV with HDR</h5>
-							  <span class="fa fa-star checked"></span>
-								  <span class="fa fa-star checked"></span>
-								  <span class="fa fa-star checked"></span>
-								  <span class="fa fa-star"></span>
-								  <span class="fa fa-star"></span></br><br>
-							  <a href="#" class="btn btn-primary">Add to cart</a>
-							</div>
-						  </div>
-				</div>
-			</div>
-		</div>
-	<!--./==========Shop New Tech by Category ==========\.-->
-	
 
-
-						
-			
-
- <!--./===========Footer============\.-->
- 	<!-- Footer -->
-
-	 <footer class="footer">
-			<div class="container">
-				<div class="row">
-	
-					<div class="col-lg-3 footer_col">
-						<div class="footer_column footer_contact">
-							<div class="logo_container">
-								<div class="logo"><a href="#"><h5>Tech Shop</h5></a></div>
-							</div>
-							<div class="footer_title">Got Question? Call Us 24/7</div>
-							<div class="footer_phone">+84 124243545</div>
-							<div class="footer_contact_text">
-								<p>Green Academy Vietnam</p>
-								<p>BIDV buiding, NTMK, Q3</p>
-							</div>
-							<div class="footer_social">
-								<ul>
-									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-									<li><a href="#"><i class="fab fa-google"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-	
-					<div class="col-lg-2 offset-lg-2">
-						<div class="footer_column">
-							<div class="footer_title">Find it Fast</div>
-							<ul class="footer_list">
-								<li><a href="#">Computers & Laptops</a></li>
-								<li><a href="#">Cameras & Photos</a></li>
-								<li><a href="#">Hardware</a></li>
-								<li><a href="#">Smartphones & Tablets</a></li>
-								<li><a href="#">TV & Audio</a></li>
-							</ul>
-							<div class="footer_subtitle">Gadgets</div>
-							<ul class="footer_list">
-								<li><a href="#">Car Electronics</a></li>
-							</ul>
-						</div>
-					</div>
-	
-					<div class="col-lg-2">
-						<div class="footer_column">
-							<ul class="footer_list footer_list_2">
-								<li><a href="#">Video Games & Consoles</a></li>
-								<li><a href="#">Accessories</a></li>
-								<li><a href="#">Cameras & Photos</a></li>
-								<li><a href="#">Hardware</a></li>
-								<li><a href="#">Computers & Laptops</a></li>
-							</ul>
-						</div>
-					</div>
-	
-					<div class="col-lg-2">
-						<div class="footer_column">
-							<div class="footer_title">Customer Care</div>
-							<ul class="footer_list">
-								<li><a href="#">My Account</a></li>
-								<li><a href="#">Order Tracking</a></li>
-								<li><a href="#">Wish List</a></li>
-								<li><a href="#">Customer Services</a></li>
-								<li><a href="#">Returns / Exchange</a></li>
-								<li><a href="#">FAQs</a></li>
-								<li><a href="#">Product Support</a></li>
-							</ul>
-						</div>
-					</div>
-	
-				</div>
-			</div>
-		</footer>
-	
-		<!-- Copyright -->
-	
-		<div class="copyright">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						
-						<div class="copyright_container d-flex flex-sm-row flex-column align-items-center justify-content-start">
-							<div class="copyright_content"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-								Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Hien Bui</a>
-								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								<div class="header-cart-wrapbtn">
+									<!-- Button -->
+									<a href="#" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+										Check Out
+									</a>
 								</div>
-							<div class="logos ml-sm-auto">
-								<ul class="logos_list">
-									<li><a href="#"><img src="images/logos_1.png" alt=""></a></li>
-									<li><a href="#"><img src="images/logos_2.png" alt=""></a></li>
-									<li><a href="#"><img src="images/logos_3.png" alt=""></a></li>
-									<li><a href="#"><img src="images/logos_4.png" alt=""></a></li>
-								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<!-- Header Mobile -->
+		<div class="wrap_header_mobile">
+			<!--Topbar Mobile-->
+			<div class="topbar-mobile">
+					<div class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
+							<span class="topbar-child1">
+								Free shipping for standard order over $100
+							</span>
+						</div>
+	
+						<div class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
+							<div class="topbar-child2-mobile">
+								<span class="topbar-email">
+									www.maia.com
+								</span>
+								
+								<span class="linedivide1"></span>
+	
+								<div class="topbar-language rs1-select2">
+										<select class="selection-1" name="time">
+											<option>ENG</option>
+											<option>日本語</option>
+										</select>
+								</div>
+							</div>
+						</div>
+			</div>
+			<!-- Logo moblie -->
+			<a href="index.html" class="logo-mobile">
+				<img src="images/icons/logo.png" alt="IMG-LOGO">
+			</a>
+
+			<!-- Button show menu -->
+			<div class="btn-show-menu">
+				<!-- Header Icon mobile -->
+				<div class="header-icons-mobile">
+					<a href="#" class="header-wrapicon1 dis-block">
+						<img src="images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
+					</a>
+
+					<span class="linedivide2"></span>
+
+					<div class="header-wrapicon2">
+						<img src="images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
+						<span class="header-icons-noti">0</span>
+
+						<!-- Header cart noti -->
+						<div class="header-cart header-dropdown">
+							<ul class="header-cart-wrapitem">
+								<li class="header-cart-item">
+									<div class="header-cart-item-img">
+										<img src="images/item-cart-01.jpg" alt="IMG">
+									</div>
+
+									<div class="header-cart-item-txt">
+										<a href="#" class="header-cart-item-name">
+											White Shirt With Pleat Detail Back
+										</a>
+
+										<span class="header-cart-item-info">
+											1 x $19.00
+										</span>
+									</div>
+								</li>
+
+								<li class="header-cart-item">
+									<div class="header-cart-item-img">
+										<img src="images/item-cart-02.jpg" alt="IMG">
+									</div>
+
+									<div class="header-cart-item-txt">
+										<a href="#" class="header-cart-item-name">
+											Nemo enim ipsam voluptatem
+										</a>
+
+										<span class="header-cart-item-info">
+											1 x $39.00
+										</span>
+									</div>
+								</li>
+
+								<li class="header-cart-item">
+									<div class="header-cart-item-img">
+										<img src="images/item-cart-03.jpg" alt="IMG">
+									</div>
+
+									<div class="header-cart-item-txt">
+										<a href="#" class="header-cart-item-name">
+											Nemo enim ipsam voluptatem
+										</a>
+
+										<span class="header-cart-item-info">
+											1 x $17.00
+										</span>
+									</div>
+								</li>
+							</ul>
+
+							<div class="header-cart-total">
+								Total: $75.00
+							</div>
+
+							<div class="header-cart-buttons">
+								<div class="header-cart-wrapbtn">
+									<!-- Button -->
+									<a href="cart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+										View Cart
+									</a>
+								</div>
+
+								<div class="header-cart-wrapbtn">
+									<!-- Button -->
+									<a href="#" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+										Check Out
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="btn-show-menu-mobile hamburger hamburger--arrow">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- Menu Mobile -->
+		<div class="wrap-side-menu" >
+			<!---->
+			<nav class="side-menu">
+				<ul class="main-menu">
+					<li class="item-topbar-mobile p-l-10">
+						<div class="topbar-social-mobile">
+							<a href="#" class="topbar-social-item fa fa-facebook"></a>
+							<a href="#" class="topbar-social-item fa fa-instagram"></a>
+							<a href="#" class="topbar-social-item fa fa-pinterest-p"></a>
+							<a href="#" class="topbar-social-item fa fa-snapchat-ghost"></a>
+							<a href="#" class="topbar-social-item fa fa-youtube-play"></a>
+						</div>
+					</li>
+
+					<li class="item-menu-mobile">
+						<a href="index.html">Home</a>
+					</li>
+
+					<li class="item-menu-mobile">
+						<a href="about.html">About</a>
+					</li>
+
+					<li class="item-menu-mobile">
+						<a href="categories.html">Shop</a>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+					</li>
+
+					<li class="item-menu-mobile">
+						<a href="cart.html">News</a>
+					</li>
+
+					<li class="item-menu-mobile">
+						<a href="blog.html">Contact</a>
+					</li>
+
+					<li class="item-menu-mobile">
+						<a href="about.html">Product</a>
+					</li>
+
+					<li class="item-menu-mobile">
+						<a href="contact.html">Sale</a>
+					</li>
+				</ul>
+					<div class="btn-show-menu-mobile hamburger hamburger--boring is-active">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</div>
+		</nav>
+			<!---->
+
+		</div>
+	</header>
+
+	<!-- Slide1 -->
+	<section class="slide1">
+		<div class="wrap-slick1">
+			<div class="slick1">
+				<div class="item-slick1 item1-slick1" style="background-image: url(images/master-slide-01.jpg);">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
+							Top Trend 2018
+						</span>
+
+						<h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
+							New arrivals
+						</h2>
+
+						<div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
+							<!-- Button -->
+							<a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+								Shop Now
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="item-slick1 item2-slick1" style="background-image: url(images/master-slide-02.jpg);">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="boundOut">
+							Magic Leap 2018
+						</span>
+
+						<h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
+							New arrivals
+						</h2>
+
+						<div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
+							<!-- Button -->
+							<a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+								Shop Now
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="item-slick1 item3-slick1" style="background-image: url(images/master-slide-03.jpg);">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rotateInDownLeft">
+							Newest
+						</span>
+
+						<h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="rotateInUpRight">
+							IphoneXX
+						</h2>
+
+						<div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="rotateIn">
+							<!-- Button -->
+							<a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+								Shop Now
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!--//////////////-->
+	<hr/>
+	<!-- New Product -->
+	<section class="newproduct bgwhite p-t-45 p-b-105">
+		<div class="container">
+			<div class="sec-title p-b-60">
+				<h3 class="m-text5 t-center">
+					Featured Books
+				</h3>
+			</div>
+
+			<!-- Slide2 -->
+			<div class="wrap-slick2">
+				<div class="slick2">
+
+					<div class="item-slick2 p-l-15 p-r-15">
+						<!-- Block2 -->
+						<div class="block2">
+							<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
+								<img src="images/item-02.jpg" alt="IMG-PRODUCT">
+
+								<div class="block2-overlay trans-0-4">
+									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+									</a>
+
+									<div class="block2-btn-addcart w-size1 trans-0-4">
+										<!-- Button -->
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="block2-txt p-t-20">
+								<a href="product-detail.html" class="block2-name dis-block p-b-5">
+									Sed tincidunt, ipsum vitae eleifend
+								</a>
+
+								<span class="block2-price p-r-5">
+									$75.00
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="item-slick2 p-l-15 p-r-15">
+						<!-- Block2 -->
+						<div class="block2">
+							<div class="block2-img wrap-pic-w of-hidden pos-relative">
+								<img src="images/item-03.jpg" alt="IMG-PRODUCT">
+
+								<div class="block2-overlay trans-0-4">
+									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+									</a>
+
+									<div class="block2-btn-addcart w-size1 trans-0-4">
+										<!-- Button -->
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="block2-txt p-t-20">
+								<a href="product-detail.html" class="block2-name dis-block p-b-5">
+									Ut vitae finibus orci.
+								</a>
+
+								<span class="block2-price p-r-5">
+									$92.50
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="item-slick2 p-l-15 p-r-15">
+						<!-- Block2 -->
+						<div class="block2">
+							<div class="block2-img wrap-pic-w of-hidden pos-relative">
+								<img src="images/item-05.jpg" alt="IMG-PRODUCT">
+
+								<div class="block2-overlay trans-0-4">
+									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+									</a>
+
+									<div class="block2-btn-addcart trans-0-4">
+										<!-- Button -->
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="block2-txt p-t-20">
+								<a href="product-detail.html" class="block2-name dis-block p-b-5">
+									Ut vitae finibus orci.
+								</a>
+
+								<span class="block2-price p-r-5">
+									$165.90
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="item-slick2 p-l-15 p-r-15">
+						<!-- Block2 -->
+						<div class="block2">
+							<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
+								<img src="images/item-07.jpg" alt="IMG-PRODUCT">
+
+								<div class="block2-overlay trans-0-4">
+									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+									</a>
+
+									<div class="block2-btn-addcart w-size1 trans-0-4">
+										<!-- Button -->
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="block2-txt p-t-20">
+								<a href="product-detail.html" class="block2-name dis-block p-b-5">
+									Ut vitae finibus orci.
+								</a>
+
+								<span class="block2-oldprice p-r-5">
+									$29.50
+								</span>
+
+								<span class="block2-newprice p-r-5">
+									$15.90
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="item-slick2 p-l-15 p-r-15">
+						<!-- Block2 -->
+						<div class="block2">
+							<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
+								<img src="images/item-02.jpg" alt="IMG-PRODUCT">
+
+								<div class="block2-overlay trans-0-4">
+									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+									</a>
+
+									<div class="block2-btn-addcart w-size1 trans-0-4">
+										<!-- Button -->
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="block2-txt p-t-20">
+								<a href="product-detail.html" class="block2-name dis-block p-b-5">
+									Ut vitae finibus orci.
+								</a>
+
+								<span class="block2-price p-r-5">
+									$75.00
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="item-slick2 p-l-15 p-r-15">
+						<!-- Block2 -->
+						<div class="block2">
+							<div class="block2-img wrap-pic-w of-hidden pos-relative">
+								<img src="images/item-03.jpg" alt="IMG-PRODUCT">
+
+								<div class="block2-overlay trans-0-4">
+									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+									</a>
+
+									<div class="block2-btn-addcart w-size1 trans-0-4">
+										<!-- Button -->
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="block2-txt p-t-20">
+								<a href="product-detail.html" class="block2-name dis-block p-b-5">
+									Ut vitae finibus orci.
+								</a>
+
+								<span class="block2-price p-r-5">
+									$92.50
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="item-slick2 p-l-15 p-r-15">
+						<!-- Block2 -->
+						<div class="block2">
+							<div class="block2-img wrap-pic-w of-hidden pos-relative">
+								<img src="images/item-05.jpg" alt="IMG-PRODUCT">
+
+								<div class="block2-overlay trans-0-4">
+									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+									</a>
+
+									<div class="block2-btn-addcart w-size1 trans-0-4">
+										<!-- Button -->
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="block2-txt p-t-20">
+								<a href="product-detail.html" class="block2-name dis-block p-b-5">
+									Ut vitae finibus orci.
+								</a>
+
+								<span class="block2-price p-r-5">
+									$165.90
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="item-slick2 p-l-15 p-r-15">
+						<!-- Block2 -->
+						<div class="block2">
+							<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
+								<img src="images/item-07.jpg" alt="IMG-PRODUCT">
+
+								<div class="block2-overlay trans-0-4">
+									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+									</a>
+
+									<div class="block2-btn-addcart w-size1 trans-0-4">
+										<!-- Button -->
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="block2-txt p-t-20">
+								<a href="product-detail.html" class="block2-name dis-block p-b-5">
+									Frayed denim shorts
+								</a>
+
+								<span class="block2-oldprice p-r-5">
+									$29.50
+								</span>
+
+								<span class="block2-newprice p-r-5">
+									$15.90
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+<!--///////////////////////////////////////-->
+
+	<!-- Banner -->
+	<section class="banner bgwhite p-t-40 p-b-40">
+				<div class="sec-title p-b-60">
+					<h3 class="m-text5 t-center">
+						Genres
+					</h3>
+				</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
+					<!-- block1 -->
+					<div class="block1 hov-img-zoom pos-relative m-b-30">
+						<img src="images/banner-02.jpg" alt="IMG-BENNER">
+
+						<div class="block1-wrapbtn w-size2">
+							<!-- Button -->
+							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+								IPAD, TABLETS
+							</a>
+						</div>
+					</div>
+
+					<!-- block1 -->
+					<div class="block1 hov-img-zoom pos-relative m-b-30">
+						<img src="images/banner-05.jpg" alt="IMG-BENNER">
+
+						<div class="block1-wrapbtn w-size2">
+							<!-- Button -->
+							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+								LAPTOPS, DESKTOPS
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
+					<!-- block1 -->
+					<div class="block1 hov-img-zoom pos-relative m-b-30">
+						<img src="images/banner-03.jpg" alt="IMG-BENNER">
+
+						<div class="block1-wrapbtn w-size2">
+							<!-- Button -->
+							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+								SOFTWARES
+							</a>
+						</div>
+					</div>
+
+					<!-- block1 -->
+					<div class="block1 hov-img-zoom pos-relative m-b-30">
+						<img src="images/banner-07.jpg" alt="IMG-BENNER">
+
+						<div class="block1-wrapbtn w-size2">
+							<!-- Button -->
+							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+								NETWORK, STORAGE
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
+					<!-- block1 -->
+					<div class="block1 hov-img-zoom pos-relative m-b-30">
+						<img src="images/banner-04.jpg" alt="IMG-BENNER">
+
+						<div class="block1-wrapbtn w-size2">
+							<!-- Button -->
+							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+								ACCESSORIES
+							</a>
+						</div>
+					</div>
+
+					<!-- block2 -->
+					<div class="block2 wrap-pic-w pos-relative m-b-30">
+						<img src="images/icons/bg-01.jpg" alt="IMG">
+
+						<div class="block2-content sizefull ab-t-l flex-col-c-m">
+
+							<div class="block1-wrapbtn w-size2">
+								<!-- Button -->
+								<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+									All books
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+		
+	<!-- Banner2 - Parallax -->
+		<hr/>
+	
+			<img src="images/bg-banner-01.jpg" alt="IMG" class="parallax">
+
+	<!-- Blog -->
+	<section class="blog bgwhite p-t-94 p-b-65">
+		<div class="container">
+			<div class="sec-title p-b-52">
+				<h3 class="m-text5 t-center">
+					REVIEW
+				</h3>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">
+					<!-- Block3 -->
+					<div class="block3">
+						<a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
+							<img src="images/blog-01.jpg" alt="IMG-BLOG">
+						</a>
+
+						<div class="block3-txt p-t-14">
+							<h4 class="p-b-7">
+								<a href="blog-detail.html" class="m-text11">
+									Black Friday Guide: Pellentesque quis luctus neque. 
+								</a>
+							</h4>
+
+							<span class="s-text6">By</span> <span class="s-text7">Nancy Ward</span>
+							<span class="s-text6">on</span> <span class="s-text7">July 22, 2017</span>
+
+							<p class="s-text8 p-t-16">
+								Duis ut velit gravida nibh bibendum commodo. Sus-pendisse pellentesque mattis augue id euismod. Inter-dum et malesuada fames
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">
+					<!-- Block3 -->
+					<div class="block3">
+						<a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
+							<img src="images/blog-02.jpg" alt="IMG-BLOG">
+						</a>
+
+						<div class="block3-txt p-t-14">
+							<h4 class="p-b-7">
+								<a href="blog-detail.html" class="m-text11">
+									Sed tincidunt, ipsum vitae eleifend
+								</a>
+							</h4>
+
+							<span class="s-text6">By</span> <span class="s-text7">Nancy Ward</span>
+							<span class="s-text6">on</span> <span class="s-text7">July 18, 2017</span>
+
+							<p class="s-text8 p-t-16">
+								Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit ame
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">
+					<!-- Block3 -->
+					<div class="block3">
+						<a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
+							<img src="images/blog-03.jpg" alt="IMG-BLOG">
+						</a>
+
+						<div class="block3-txt p-t-14">
+							<h4 class="p-b-7">
+								<a href="blog-detail.html" class="m-text11">
+									Sed tincidunt, ipsum vitae eleifend
+								</a>
+							</h4>
+
+							<span class="s-text6">By</span> <span class="s-text7">Nancy Ward</span>
+							<span class="s-text6">on</span> <span class="s-text7">July 2, 2017</span>
+
+							<p class="s-text8 p-t-16">
+								Proin nec vehicula lorem, a efficitur ex. Nam vehicula nulla vel erat tincidunt, sed hendrerit ligula porttitor. Fusce sit amet maximus nunc
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Instagram -->
+	<section class="instagram p-t-20">
+		<div class="sec-title p-b-52 p-l-15 p-r-15">
+			<h3 class="m-text5 t-center">
+				GOOD BOOK
+			</h3>
+		</div>
+
+		<div class="flex-w">
+			<!-- Block4 -->
+			<div class="block4 wrap-pic-w">
+				<img src="images/gallery-03.jpg" alt="IMG-INSTAGRAM">
+
+				<a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
+					<span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
+						<i class="icon_heart_alt fs-20 p-r-12" aria-hidden="true"></i>
+						<span class="p-t-2">39</span>
+					</span>
+
+					<div class="block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30">
+						<p class="s-text10 m-b-15 h-size1 of-hidden">
+							Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget metus elit.
+						</p>
+
+						<span class="s-text9">
+							Author: JK.Rowling
+						</span>
+					</div>
+				</a>
+			</div>
+			<!-- Block4 -->
+			<div class="block4 wrap-pic-w">
+				<img src="images/gallery-09.jpg" alt="IMG-INSTAGRAM">
+
+				<a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
+					<span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
+						<i class="icon_heart_alt fs-20 p-r-12" aria-hidden="true"></i>
+						<span class="p-t-2">39</span>
+					</span>
+
+					<div class="block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30">
+						<p class="s-text10 m-b-15 h-size1 of-hidden">
+							Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget metus elit.
+						</p>
+
+						<span class="s-text9">
+							Author: JK.Rowling
+						</span>
+					</div>
+				</a>
+			</div>
+
+			<!-- Block4 -->
+			<div class="block4 wrap-pic-w">
+				<img src="images/gallery-13.jpg" alt="IMG-INSTAGRAM">
+
+				<a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
+					<span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
+						<i class="icon_heart_alt fs-20 p-r-12" aria-hidden="true"></i>
+						<span class="p-t-2">39</span>
+					</span>
+
+					<div class="block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30">
+						<p class="s-text10 m-b-15 h-size1 of-hidden">
+							Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget metus elit.
+						</p>
+
+						<span class="s-text9">
+							Author: JK.Rowling
+						</span>
+					</div>
+				</a>
+			</div>
+
+			<!-- Block4 -->
+			<div class="block4 wrap-pic-w">
+				<img src="images/gallery-13.jpg" alt="IMG-INSTAGRAM">
+
+				<a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
+					<span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
+						<i class="icon_heart_alt fs-20 p-r-12" aria-hidden="true"></i>
+						<span class="p-t-2">39</span>
+					</span>
+
+					<div class="block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30">
+						<p class="s-text10 m-b-15 h-size1 of-hidden">
+							Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget metus elit.
+						</p>
+
+						<span class="s-text9">
+							Author: JK.Rowling
+						</span>
+					</div>
+				</a>
+			</div>
+
+			<!-- Block4 -->
+			<div class="block4 wrap-pic-w">
+				<img src="images/gallery-15.jpg" alt="IMG-INSTAGRAM">
+
+				<a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
+					<span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
+						<i class="icon_heart_alt fs-20 p-r-12" aria-hidden="true"></i>
+						<span class="p-t-2">39</span>
+					</span>
+
+					<div class="block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30">
+						<p class="s-text10 m-b-15 h-size1 of-hidden">
+							Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget metus elit.
+						</p>
+
+						<span class="s-text9">
+							Author: JK.Rowling
+						</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Shipping -->
+	<section class="shipping bgwhite p-t-62 p-b-46">
+		<div class="flex-w p-l-15 p-r-15">
+			<div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1">
+				<h4 class="m-text12 t-center">
+					Free Delivery Worldwide
+				</h4>
+
+				<a href="#" class="s-text11 t-center">
+					Click here for more info
+				</a>
+			</div>
+
+			<div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 bo2 respon2">
+				<h4 class="m-text12 t-center">
+					30 Days Return
+				</h4>
+
+				<span class="s-text11 t-center">
+					Simply return it within 30 days for an exchange.
+				</span>
+			</div>
+
+			<div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1">
+				<h4 class="m-text12 t-center">
+					Store Opening
+				</h4>
+
+				<span class="s-text11 t-center">
+					Shop open from Monday to Sunday
+				</span>
+			</div>
+		</div>
+	</section>
+	<!--Manufacturers-->
+	<div id="demo" class="carousel slide" data-ride="carousel" style="height: 150px">
+
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+			  <li data-target="#demo" data-slide-to="0" class="active"></li>
+			  <li data-target="#demo" data-slide-to="1"></li>
+			  <li data-target="#demo" data-slide-to="3"></li>
+			  <li data-target="#demo" data-slide-to="4"></li>
+			  <li data-target="#demo" data-slide-to="5"></li>
+			  <li data-target="#demo" data-slide-to="6"></li>
+			  <li data-target="#demo" data-slide-to="8"></li>
+			  <li data-target="#demo" data-slide-to="9"></li>
+			  <li data-target="#demo" data-slide-to="10"></li>
+			</ul>
+		  
+			<!-- The slideshow -->
+			<div class="carousel-inner" >
+			  <div class="carousel-item active ">
+				  	<ul class="d-flex flex-row justify-content-around">
+					  <li><img src="images/hp.png" alt="Hp"></li>
+					  <li><img src="images/samsung.png" alt="samsung"></li>
+					  <li><img src="images/acer.png" alt="acer"></li>
+					  <li><img src="images/apple.png" alt="apple"></li>
+					  <li><img src="images/asus.png" alt="asus"></li>
+					</ul>
+				</div>
+				<div class="carousel-item">
+					<ul class="d-flex flex-row justify-content-around">
+						<li><img src="images/lenovo.png" alt="lenovo"></li>
+						<li><img src="images/sony.png" alt="sony"></li>
+						<li><img src="images/unit.png" alt="unit"></li>
+						<li><img src="images/toshiba.png" alt="toshiba"></li>
+					</ul>
+			  
+				 </div>
+			 
+
+			</div>
+		  
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+			  <span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+			  <span class="carousel-control-next-icon"></span>
+			</a>
+		  
+		  </div>
+		  
+
+	<!-- Footer -->
+	<footer class="bg6 p-t-45 p-b-43 p-l-45 p-r-45">
+		<div class="flex-w p-b-90">
+			<div class="w-size6 p-t-30 p-l-15 p-r-15 respon3">
+				<h4 class="m-text8 p-b-30">
+					CONTACT US
+				</h4>
+
+				<div>
+					<p class="s-text7 w-size27">
+							Lorem ipsum dolor sit amet, lobortis feugiat, natoque maecenas, vel dui leo ipsum et laoreet lacus, sed varius ante neque ut diam nunc. Sed id a erat. Mauris placerat habitant feugiat nec, amet risus mattis, arcu mi, feugiat dictum nullam adipiscing vitae. 
+					</p>
+
+					<div class="flex-m p-t-30">
+						<a href="#" class="fs-18 color1 p-r-20 fa fa-facebook"></a>
+						<a href="#" class="fs-18 color1 p-r-20 fa fa-instagram"></a>
+						<a href="#" class="fs-18 color1 p-r-20 fa fa-pinterest-p"></a>
+						<a href="#" class="fs-18 color1 p-r-20 fa fa-snapchat-ghost"></a>
+						<a href="#" class="fs-18 color1 p-r-20 fa fa-youtube-play"></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
+				<h4 class="m-text8 p-b-30">
+					Categories
+				</h4>
+
+				<ul>
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							Ipad & Tablets
+						</a>
+					</li>
+
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							Laptops
+						</a>
+					</li>
+
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							Software
+						</a>
+					</li>
+
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							Accessories
+						</a>
+					</li>
+
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							Network & Storage
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
+				<h4 class="m-text8 p-b-30">
+					Links
+				</h4>
+
+				<ul>
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							Search
+						</a>
+					</li>
+
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							About Us
+						</a>
+					</li>
+
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							Contact Us
+						</a>
+					</li>
+
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							Returns
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
+				<h4 class="m-text8 p-b-30">
+					Help
+				</h4>
+
+				<ul>
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							Track Order
+						</a>
+					</li>
+
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							Returns
+						</a>
+					</li>
+
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							Shipping
+						</a>
+					</li>
+
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							FAQs
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="w-size8 p-t-30 p-l-15 p-r-15 respon3">
+				<h4 class="m-text8 p-b-30">
+					Newsletter
+				</h4>
+
+				<form>
+					<div class="effect1 w-size9">
+						<input class="s-text7 bg6 w-full p-b-5" type="text" name="email" placeholder="email@example.com">
+						<span class="effect1-line"></span>
+					</div>
+
+					<div class="w-size2 p-t-20">
+						<!-- Button -->
+						<button class="flex-c-m size2 bg4 bo-rad-23 hov1 m-text3 trans-0-4">
+							Subscribe
+						</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+
+		<div class="t-center p-l-15 p-r-15">
+			<a href="#">
+				<img class="h-size2" src="images/icons/paypal.png" alt="IMG-PAYPAL">
+			</a>
+
+			<a href="#">
+				<img class="h-size2" src="images/icons/visa.png" alt="IMG-VISA">
+			</a>
+
+			<a href="#">
+				<img class="h-size2" src="images/icons/mastercard.png" alt="IMG-MASTERCARD">
+			</a>
+
+			<a href="#">
+				<img class="h-size2" src="images/icons/express.png" alt="IMG-EXPRESS">
+			</a>
+
+			<a href="#">
+				<img class="h-size2" src="images/icons/discover.png" alt="IMG-DISCOVER">
+			</a>
+		</div>
+	</footer>
+
+
+
+	<!-- Back to top -->
+	<div class="btn-back-to-top bg0-hov" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
 	</div>
-	
+<!--===============================================================================================-->
+	<script type="text/javascript" src="asset/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="asset/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="asset/bootstrap/js/popper.js"></script>
+	<script type="text/javascript" src="asset/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="asset/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="asset/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/slick-custom.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript">
+		$('.block2-btn-addcart').each(function(){
+			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
+			$(this).on('click', function(){
+				swal(nameProduct, "is added to cart !", "success");
+			});
+		});
 
-	<script href="asset/js/main_style.js"></script>
+		$('.block2-btn-addwishlist').each(function(){
+			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
+			$(this).on('click', function(){
+				swal(nameProduct, "is added to wishlist !", "success");
+			});
+		});
+	</script>
+
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
 </body>
 </html>
